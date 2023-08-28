@@ -4,7 +4,7 @@ public class Employee {
     private final String name;
     private final String fatherName;
     private int department;
-    public int salary;
+    private int salary;
     private final int personalNumber;
 
     private static Integer personalNumberGenerate = 1;
