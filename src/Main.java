@@ -1,6 +1,10 @@
 import java.util.Scanner;
 public class Main {
+    private static Employee[] employeeDataArchive = new Employee[10];
     public static void main(String[] args) {
+
+        employeeDataArchive();
+
         task1();
     }
     public static int departmentNumberGenerator() {
@@ -22,6 +26,7 @@ public class Main {
         return salaryValueGenerator;
     }
     public static Employee [] employeeDataArchive() {
+//    public static void Employee [] employeeDataArchive() {
 
         Employee employee1 = new Employee("Иванов", "Иван", "Иванович", departmentNumberGenerator(), salaryValueGenerator());
         Employee employee2 = new Employee("Петров", "Пётр", "Петрович", departmentNumberGenerator(), salaryValueGenerator());
@@ -34,7 +39,7 @@ public class Main {
         Employee employee9 = new Employee("Великий", "Антон", "Александрович", departmentNumberGenerator(), salaryValueGenerator());
         Employee employee10 = new Employee("Крымская", "Маргарита", "Вячеславовна", departmentNumberGenerator(), salaryValueGenerator());
 
-        Employee[] employeeDataArchive = new Employee[10];
+//        Employee[] employeeDataArchive = new Employee[10];
         employeeDataArchive[0] = employee1;
         employeeDataArchive[1] = employee2;
         employeeDataArchive[2] = employee3;
